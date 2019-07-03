@@ -1,4 +1,5 @@
 import React from 'react';
+import '../dist/css/index.min.css'; 
 class Sample extends React.Component {
     // state={
     //     name:"ehsan khorsand",
@@ -7,21 +8,21 @@ class Sample extends React.Component {
   
     render(){ 
         
-         const {lists} = this.props;
+         const {people} = this.props;
 
-        const mytest=lists.map((test)=>{
+        const mypeople=people.map((person)=>{
 return(
-    <div className="test" key={test.id}>
-<div>
-    name:{test.name}
+    <div className="person" key={person.id}>
+<div className='ddd'>
+    name:{person.name}
 </div>
-<div>
-age :{test.age}
+<div className='ddd'>
+age :{person.age}
 </div>
 </div>
 );
         });
-        return <div className="mytest"> {mytest}</div> ;
+        return <div className="mypeople"> {mypeople}</div> ;
     }
 }
 export default Sample;

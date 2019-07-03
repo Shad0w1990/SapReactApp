@@ -5,7 +5,7 @@ import Sample from './JsComponent/Sample';
 
 class App extends React.Component {
  state={
-  lists:[
+  people:[
   {id:"1",name:"ehsan khorsand" ,age:"28"},
   {id:"2",name:"mohsen khorsand" ,age:"30"},
   {id:"3",name:"behrooz gholamhosein fard" ,age:"25"}
@@ -16,7 +16,7 @@ class App extends React.Component {
   return (
     <div className="App">
       
-      <Sample lists={this.state.lists}/>
+      <Sample people={this.state.people}/>
     </div>
   );
 }

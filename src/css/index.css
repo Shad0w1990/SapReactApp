@@ -19,4 +19,15 @@ body #menu {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.person {
+  margin: 0 auto;
+  padding: 10px;
+  width: 20%;
+}
+
+.ddd {
+  -webkit-box-shadow: #42aa 5px 5px 5px 5px;
+          box-shadow: #42aa 5px 5px 5px 5px;
+}
 /*# sourceMappingURL=index.css.map */
