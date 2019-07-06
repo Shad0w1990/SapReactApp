@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Sample from './JsComponent/Sample';
 
-class App extends React.Component {
+export default class App extends React.Component {
  state={
   people:[
   {id:"1",name:"ehsan khorsand" ,age:"28"},
@@ -22,4 +22,6 @@ class App extends React.Component {
 }
 }
 
-export default App;
+
+
+

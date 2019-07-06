@@ -1,14 +1,11 @@
 import React from 'react';
 import '../dist/css/index.min.css'; 
-class Sample extends React.Component {
+const Sample= ({people})=> {
     // state={
     //     name:"ehsan khorsand",
     //     age:28
     // }
-  
-    render(){ 
-        
-         const {people} = this.props;
+         
 
         const mypeople=people.map((person)=>{
 return(
@@ -23,6 +20,6 @@ age :{person.age}
 );
         });
         return <div className="mypeople"> {mypeople}</div> ;
-    }
-}
+     }
+
 export default Sample;
